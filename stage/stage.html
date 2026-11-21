@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <title>Prism</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="stage.css" />
+</head>
+<body class="bg-glass">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="mesh-bg" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="toolbar" id="toolbar">
+    <div class="tb-group brand" title="Prism">
+      <span class="logo"></span>
+      <span class="brand-name">Prism</span>
+    </div>
+
+    <div class="tb-group">
+      <button class="dev-select" id="devSelect" data-tip="Choose device">
+        <span class="dot"></span><span class="glyph-mini"></span><span class="ds-name">iPhone 17 Pro Max</span><span class="ico chev" data-i="chevDown"></span>
+      </button>
+      <button class="ib" id="btnMulti" data-tip="Devices (add up to 4)"><span class="ico" data-i="layers"></span><span class="badge" id="multiCount">3</span></button>
+    </div>
+
+    <div class="tb-group tools">
+      <button class="ib" id="btnFold" data-tip="Fold / Unfold (G)" style="display:none"><span class="ico" data-i="fold"></span></button>
+      <button class="ib" id="btnRotate" data-tip="Rotate (R)"><span class="ico" data-i="rotate"></span></button>
+      <button class="ib toggle" id="btnSync" data-tip="Sync scroll (Y)"><span class="ico" data-i="sync"></span></button>
+      <button class="ib" id="btnShot" data-tip="Screenshot (S) · Shift: all devices"><span class="ico" data-i="camera"></span></button>
+      <button class="ib rec" id="btnRec" data-tip="Record active device"><span class="ico" data-i="video"></span><span class="rec-time" id="recTime">00:00</span></button>
+      <button class="ib toggle" id="btnSpot" data-tip="Spotlight active device (F)"><span class="ico" data-i="focus"></span></button>
+      <button class="ib" id="btnSettings" data-tip="Settings"><span class="ico" data-i="sliders"></span></button>
+    </div>
+
+    <div class="tb-group zoom">
+      <button class="ib sm" id="zoomOut" data-tip="Zoom out (−)"><span class="ico" data-i="minus"></span></button>
+      <input type="range" id="zoomRange" min="15" max="150" value="60" aria-label="Zoom" />
+      <button class="ib sm" id="zoomIn" data-tip="Zoom in (+)"><span class="ico" data-i="plus"></span></button>
+      <button class="zoom-val" id="zoomFit" data-tip="Fit to screen (0)"><span id="zoomPct">60%</span><span class="fit-tag">FIT</span></button>
+    </div>
+
+    <form class="tb-group url" id="urlForm" autocomplete="off">
+      <span class="ico lock" data-i="lock"></span>
+      <input id="urlInput" spellcheck="false" placeholder="Enter a URL…" />
+      <button type="button" class="ib sm" id="btnReload" data-tip="Reload all"><span class="ico" data-i="refresh"></span></button>
+    </form>
+
+    <div class="tb-group right">
+      <button class="theme-switch" id="btnTheme" data-tip="Light / dark (T)"><span class="knob"><span class="ico" data-i="moon"></span></span></button>
+      <span class="dims" id="dims">440 × 956</span>
+      <button class="ib" id="btnMin" data-tip="Hide toolbar (M)"><span class="ico" data-i="chevUp"></span></button>
+      <button class="ib close" id="btnClose" data-tip="Close (Esc)"><span class="ico" data-i="x"></span></button>
+    </div>
+  </header>
+
+  <button class="pill" id="pill" title="Show toolbar (M)"><span class="logo"></span><span class="ico" data-i="chevDown"></span></button>
+
+  <main class="stage" id="stage">
+    <div class="row" id="row"></div>
+  </main>
+
+  <div class="pop devpanel" id="devPanel" hidden></div>
+  <div class="pop settings" id="settingsPanel" hidden></div>
+  <div class="toasts" id="toasts"></div>
+
+  <script src="devices.js"></script>
+  <script src="icons.js"></script>
+  <script src="stage.js"></script>
+</body>
+</html>

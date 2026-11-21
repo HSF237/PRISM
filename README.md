@@ -48,4 +48,8 @@ Preview any website on up to 4 live devices side by side (iPhone, Android, table
 - The mobile user-agent *header* is only sent when no desktop device is on screen, so it doesn't conflict with the desktop preview. JavaScript-level emulation always runs per device.
 - Chrome doesn't allow extensions on `chrome://` pages or the Chrome Web Store. The icon shows a red `!` there.
 
+## Promo video
+
+[`promo/Prism-Ad.mp4`](promo/Prism-Ad.mp4): a 53-second demo of every feature. Music ("House Vibes") and sound effects are from [Mixkit](https://mixkit.co), used under the Mixkit free license.
+
 Built by Zerox Studios.

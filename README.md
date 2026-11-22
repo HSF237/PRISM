@@ -31,9 +31,9 @@ Resizing your browser window doesn't show you what your site really looks like o
 
 ## Install
 
-1. Download **`prism.zip`** from the [latest release](https://github.com/HSF237/PRISM/releases/latest) and unzip it.
+1. Download **`prism.zip`** from the [latest release](https://github.com/HSF237/PRISM/releases/latest) (or click **Code → Download ZIP** above) and unzip it.
 2. Open `chrome://extensions` and turn on **Developer mode** (top right).
-3. Click **Load unpacked** and pick the unzipped `prism` folder.
+3. Click **Load unpacked** and pick the unzipped folder (the one with `manifest.json` in it).
 4. Pin Prism, open any website and click the icon (or press **Alt+Shift+M**).
 
 Chrome Web Store listing coming soon.

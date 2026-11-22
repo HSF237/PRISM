@@ -3,7 +3,7 @@
   "name": "Prism — Multi-Device Preview",
   "short_name": "Prism",
   "version": "1.0.0",
-  "description": "Preview any website on up to 4 live devices side by side — iPhone, Android, tablets and laptops — with synced scrolling, screenshots and recording.",
+  "description": "See any website on 34 real devices side by side at true size: iPhone, Android, iPad, MacBook. Synced scroll, screenshots, recording.",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
